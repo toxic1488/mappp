@@ -1,0 +1,102 @@
+#myMap{
+	position: relative;
+	width: 840px;
+	height: 520px;
+	background-image: url(../img/map.png);
+	margin: 0 auto;
+	
+}
+
+.circle{
+	border-radius: 50%;
+	width: 4px;
+	height: 4px;
+	background-color: white;
+	border: 3px solid yellow;
+	position: absolute;
+}
+.circle:hover{
+	cursor: pointer;
+}
+.circle:hover::after{
+	content: attr(data-title);
+	position: absolute;
+    right: -35px; bottom: 50%;
+    z-index: 1;
+    box-sizing: border-box;
+    background: rgba(255,255,230,0.9);
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-style: italic;
+    padding: 5px 10px;
+}
+
+.city-1{
+	margin-top: 430px;
+	margin-left: 738px;
+}
+
+.city-2{
+	margin-top: 230px;
+	margin-left: 98px;
+}
+
+.city-3{
+	margin-top: 298px;
+	margin-left: 128px;
+}
+
+.city-4{
+	margin-top: 190px;
+	margin-left: 200px;
+}
+
+.city-5{
+	margin-top: 228px;
+	margin-left: 108px;
+}
+
+.tooltip{
+	position: fixed;
+	display: block;
+	top: 0;
+	width: 75px;
+	height: 75px;
+	color: white;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 5px;
+	box-sizing: border-box;
+
+  	border :3px solid white;
+}
+.tooltip::after{
+	content: '';
+	position: absolute;
+	margin-left: 20px;
+	bottom: -10px;
+	border-left:8px solid transparent;
+	border-right:8px solid transparent;
+	border-top:8px solid white;
+}
+.tooltip:hover{
+	cursor: pointer;
+}
+
+.zone-1{
+	margin-top: 253px;
+	margin-left: 68px;
+}
+
+.zone-2{
+	margin-top: 400px;
+	margin-left: 678px;
+}
+.zone-3{
+	margin-top: 95px;
+	margin-left: 160px;
+}
+.zone-4{
+	margin-top: 173px;
+	margin-left: 113px;
+}
